@@ -226,18 +226,18 @@ var UIController = (function() {
             // Create HTML String with placholder text
 
             if (type === 'inc') {
-                element = DOMstrings.incomeContainer; //<ion-icon class="close-circle-outline"></ion-icon>
+                element = DOMstrings.incomeContainer; //<ion-icon name="close-circle-outline"></ion-icon>
 
                 html = `<div class="item clearfix" id="inc-${obj.id}"><div class="item__description">${obj.description}</div>
                 <div class="right clearfix"><div class="item__value">${formatNumber(obj.value, type)}</div>
-                <div class="item__delete"><button class="item__delete--btn"><ion-icon class="close-circle-outline"></ion-icon></button></div></div></div>`;
+                <div class="item__delete"><button class="item__delete--btn"><ion-icon name="close-circle-outline"></ion-icon></button></div></div></div>`;
             } else if (type === 'exp') {
                 element = DOMstrings.expenseContainer;
 
                 html = `<div class="item clearfix" id="exp-${obj.id}"><div class="item__description">${obj.description}</div>
                 <div class="right clearfix"><div class="item__value">${formatNumber(obj.value, type)}</div>
                 <div class="item__percentage">21%</div><div class="item__delete">
-                <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>`;
+                <button class="item__delete--btn"><ion-icon name="close-circle-outline"></ion-icon></button></div></div></div>`;
             }
             
             // Replace placeholdere text with some actual data

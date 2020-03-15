@@ -164,6 +164,10 @@ body {
     margin-left: 10px;
 }
 
+ion-icon {
+    --ionicon-stroke-width: 16px;
+  }
+
 .add__btn:active { transform: translateY(2px); }
 
 .add__type:focus,

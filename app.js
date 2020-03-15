@@ -182,7 +182,7 @@ var UIController = (function() {
 
     var formatNumber = function(num, type) {
 
-        var numsplit, int, dec, sign;
+        var numsplit, int, dec, number;
         /*
         + or - before the num
         exactky 2 decimal points
@@ -196,9 +196,8 @@ var UIController = (function() {
         numsplit = num.split('.');
         int = numsplit[0];
 
-        if (int.length > 3) {
-            int = int.substr(0, int.length-3) + ',' + int.substr(int.length-3, 3); // input 2310, output 2,310
-        }
+        int = Number(int) // converts int into a number
+        int = int.toLocaleString() // Mehtod that automatically add commas to the number, then returns a string
         dec = numsplit[1];
         return (type === 'exp' ? '-' : '+') + ' ' + int + '.' + dec;
     };
@@ -328,11 +327,17 @@ var UIController = (function() {
                     cur.classList.toggle('red-focus');
                 })
 
-                document.querySelector(DOMstrings.inputBtn).classList.toggle('red')
+                document.querySelector(DOMstrings.inputBtn).classList.toggle('red');
+                if (document.getElementById("btn__type").attributes["name"].value === "add-circle-outline") {
+                    document.getElementById("btn__type").setAttribute("name","remove-circle-outline")
+                } else {
+                    document.getElementById("btn__type").setAttribute("name","add-circle-outline")
+                }
+                
 
         }
     };
-
+//<ion-icon name="remove-circle-outline"></ion-icon>
 })();
 
 

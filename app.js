@@ -230,14 +230,14 @@ var UIController = (function() {
 
                 html = `<div class="item clearfix" id="inc-${obj.id}"><div class="item__description">${obj.description}</div>
                 <div class="right clearfix"><div class="item__value">${formatNumber(obj.value, type)}</div>
-                <div class="item__delete"><button ion-icon class="close-circle-outline"></ion-icon></button></div></div></div>`;
+                <div class="item__delete"><ion-icon class="close-circle-outline"></ion-icon></div></div></div>`;
             } else if (type === 'exp') {
                 element = DOMstrings.expenseContainer;
 
                 html = `<div class="item clearfix" id="exp-${obj.id}"><div class="item__description">${obj.description}</div>
                 <div class="right clearfix"><div class="item__value">${formatNumber(obj.value, type)}</div>
                 <div class="item__percentage">21%</div><div class="item__delete">
-                <button ion-icon class="close-circle-outline"></ion-icon></button></div></div></div>`;
+                <ion-icon class="close-circle-outline"></ion-icon></div></div></div>`;
             }
             
             // Replace placeholdere text with some actual data

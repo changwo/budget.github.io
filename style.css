@@ -140,6 +140,7 @@ option {
     font-weight: 400;
     transition: border 0.3s;
     border-radius: 5px;
+    text-align-last: center;
 }
 
 .add__description,

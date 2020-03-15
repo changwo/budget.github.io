@@ -190,19 +190,20 @@ ion-icon {
 
 /***** LISTS *****/
 .container {
-    width: 1000px;
+    width: 100%;
     margin: 60px auto;
 }
 
 .income {
     float: left;
-    width: 475px;
-    margin-right: 50px;
+    width: 50%;
+    margin-right: 5%;
+    padding-left: 10px;
 }
 
 .expenses {
-    float: left;
-    width: 475px;
+    float: right;
+    width: 45%;
 }
 
 h2 {

@@ -31,6 +31,10 @@ body {
 *** TOP PART
 **********************************************/
 
+option {
+    font-size: 14px;
+}
+
 .top {
     height: 40vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(back.png);
@@ -125,15 +129,17 @@ body {
 }
 
 .add__type {
-    width: 55px;
+    width: 93px;
     border: 1px solid #e7e7e7;
     height: 44px;
-    font-size: 18px;
-    color: inherit;
+    font-size: 14px;
+    font-family: inherit;
+    color: dimgray;
     background-color: #fff;
     margin-right: 10px;
-    font-weight: 300;
+    font-weight: 400;
     transition: border 0.3s;
+    border-radius: 5px;
 }
 
 .add__description,
@@ -166,6 +172,8 @@ body {
 
 ion-icon {
     --ionicon-stroke-width: 16px;
+    
+    
   }
 
 .add__btn:active { transform: translateY(2px); }
@@ -284,19 +292,19 @@ h2 {
 
 .budget__value {
     font-size: 25px;
-}
-
-.add__type {
-    width: 40px;
+    
 }
 
 .add__description {
-    width: 260px;
+    width: 215px;
+    margin-right: 16px;
+    margin-right: 1px;
 }
 
 .add__value {
-    width: 260px;
-    margin-right: 15px;
+    width: 274px;
+    margin-right: 0px;
+    margin-top: 4px;
 }
 
 .add__btn {
@@ -304,6 +312,7 @@ h2 {
     line-height: 1.7;
     padding-right: 10px;
     margin: 0px;
+    height: 50px;
 }
 
 body {

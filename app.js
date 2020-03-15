@@ -328,10 +328,10 @@ var UIController = (function() {
                 })
 
                 document.querySelector(DOMstrings.inputBtn).classList.toggle('red');
-                if (document.getElementById("btn__type").attributes["name"].value === "add-circle-outline") {
-                    document.getElementById("btn__type").setAttribute("name","remove-circle-outline")
+                if (document.getElementById("btn__type").attributes["name"].value === "add-circle") {
+                    document.getElementById("btn__type").setAttribute("name","remove-circle")
                 } else {
-                    document.getElementById("btn__type").setAttribute("name","add-circle-outline")
+                    document.getElementById("btn__type").setAttribute("name","add-circle")
                 }
                 
 
